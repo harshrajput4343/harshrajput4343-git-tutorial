@@ -196,3 +196,39 @@ If your repository contains tags (e.g., versions or releases), push them to the 
 ```bash
 git push --tags
 ```
+
+## Push a File to a Different Branch
+
+Follow these steps to push a specific file (e.g., `GIT_TUTORIAL.md`) to a different branch named `learn-git`:
+
+### Step 1: Create the `learn-git` Branch
+If the branch does not already exist, create it:
+```bash
+git checkout -b learn-git(learn-git is branch name ,u can change as per your wish)
+remove -b if you want to commit again
+
+```
+
+### Step 2: Stage the File
+Add the file to the staging area:
+```bash
+git add GIT_TUTORIAL.md
+```
+
+### Step 3: Commit the Changes
+Commit the file with a descriptive message:
+```bash
+git commit -m "Add GIT_TUTORIAL.md to learn-git branch"
+```
+
+### Step 4: Push the Branch to the Remote Repository
+Push the `learn-git` branch to the remote repository:
+```bash
+git push -u origin learn-git
+```
+
+### Step 5: Verify the Branch
+After pushing, verify the branch and file on GitHub or by running:
+```bash
+git branch -a
+```
