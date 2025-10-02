@@ -1,0 +1,37 @@
+How to initialize a git in github
+
+
+first go to project main directory by cd "path to project main directory"
+
+…or create a new repository on the command line
+echo "# harshrajput4343-git-tutorial" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/harshrajput4343/harshrajput4343-git-tutorial.git
+git push -u origin main
+
+
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/harshrajput4343/harshrajput4343-git-tutorial.git
+git branch -M main
+git push -u origin main
+
+
+
+
+if this will occur :
+error: failed to push some refs to 'https://github.com/harshrajput4343/harshrajput4343-Docker-Learning.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: use 'git pull' before pushing again.
+
+
+then:
+# First, fetch and merge remote main branch
+git pull origin main --rebase
+
+# Then push your local changes
+git push -u origin main
