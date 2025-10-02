@@ -16,7 +16,12 @@ git push -u origin main
 
 
 …or push an existing repository from the command line
+cd path/to/your/project
+git init
 git remote add origin https://github.com/harshrajput4343/harshrajput4343-git-tutorial.git
+git remote -v
+git add .
+git commit -m "Initial commit"
 git branch -M main
 git push -u origin main
 
@@ -35,3 +40,8 @@ git pull origin main --rebase
 
 # Then push your local changes
 git push -u origin main
+
+If you want to overwrite remote completely (dangerous, deletes remote history):
+
+git push origin main --force
+
