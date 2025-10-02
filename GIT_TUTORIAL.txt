@@ -27,6 +27,20 @@ git push -u origin main
 
 
 
+If copied from somewhere then use it 
+# remove old origin and add your new repo URL
+git remote remove origin
+git remote add origin https://github.com/harshrajput4343/laptop-price-predictor-regression.git
+
+# ensure branch name
+git branch -M main
+
+# push your changes and set upstream
+git push -u origin main
+
+
+
+
 
 if this will occur :
 error: failed to push some refs to 'https://github.com/harshrajput4343/harshrajput4343-Docker-Learning.git'
